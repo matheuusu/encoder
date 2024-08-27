@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --main-font-title: "Poppins", sans-serif;
+  --main-font-text: "DM Sans", sans-serif;
+
+  --hue: 159;
+  --base-color: hsl(159, 43%, 57%);
+  --base-color-second: hsl(159, 74%, 88%);
+  --title-color: hsl(0, 0%, 0%);
+  --title-color-second: hsl(159, 45%, 10%);
+  --text-color: hsl(0, 0%, 46%);
+  --text-color-light: hsl(0, 0%, 89%);
+  --bg-color: hsl(0, 0%, 98%);
+  --bg-color-second: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--main-font-text);
+  font-size: 1.6rem;
+  font-weight: 400;
+  overflow-x: hidden; /* Adicionado para evitar overflow */
+}
+
+/*==== BASE ====================*/
+.wrapper {
+  padding: 4rem; /* Alterado de margin para padding */
+}
+
+/*==== HEADER ====================*/
+#header {
+  display: flex;
+  width: 100%;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  height: 7.2rem;
+  width: 100%;
+}
+
+.header__logo {
+  font-family: var(--main-font-title);
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--title-color-second);
+}
+
+.header__logo strong {
+  color: var(--base-color);
+}
+
+/*==== MAIN ====================*/
+.main-content {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+}
+
+/* LEFT-PANEL */
+#left-panel {
+  margin-left: 33.8rem;
+}
+
+#left-panel,
+.left-panel__options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.left-panel__message textarea {
+  font-family: var(--main-font-title);
+  background-color: var(--bg-color);
+  color: var(--title-color);
+  font-size: 2.4rem;
+  width: 68rem;
+  height: 60rem;
+  resize: none;
+}
+
+.left-panel__buttons {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.left-panel__buttons button,
+.btn-copy {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--main-font-title);
+  width: 32.8rem;
+  padding: 2.4rem 0;
+  border-radius: 1.6rem;
+  cursor: pointer;
+}
+
+.left-panel__buttons .btn-encrypt,
+.btn-copy {
+  background-color: var(--base-color);
+  color: var(--bg-color);
+}
+
+.left-panel__buttons .btn-decrypt {
+  border: 2px solid var(--base-color);
+  background-color: var(--bg-color-second);
+  color: var(--base-color);
+}
+
+/* RIGHT-PANEL */
+#right-panel {
+  border: 2px solid var(--base-color-second);
+  width: 40rem;
+  height: 82rem;
+  padding: 3.2rem;
+  background-color: var(--bg-color-second);
+  border-radius: 3.2rem;
+  position: absolute;
+  right: 33.8rem;
+}
+
+#right-panel,
+.right-panel__message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  text-align: center;
+}
+
+.right-panel__message {
+  position: relative;
+  gap: 1.6rem;
+}
+
+.message-title {
+  font-size: 2.4rem;
+  word-wrap: break-word;
+  word-break: break-word;
+  margin-bottom: 2rem;
+}

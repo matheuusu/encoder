@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script defer src="assets/script/index.js"></script>
+    <title>Alura Challenge</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header__wrapper wrapper">
+        <a href="index.html" class="header__logo"><strong>dev</strong>theus</a>
+      </div>
+    </header>
+    <main class="main-content">
+      <section id="left-panel" class="main-content__section">
+        <div class="left-panel__message">
+          <textarea
+            name="message"
+            placeholder="Digite seu texto"
+            aria-label="Campo de entrada do texto"
+          ></textarea>
+        </div>
+        <div class="left-panel__options">
+          <p>Apenas letas sem acento.</p>
+          <div class="left-panel__buttons">
+            <button class="btn-encrypt">Criptografar</button>
+            <button class="btn-decrypt">Descriptografar</button>
+          </div>
+        </div>
+      </section>
+      <aside id="right-panel" class="main-content__aside">
+        <img src="assets/images/boneco.svg" alt="Imagem animada de um gato" />
+        <div class="right-panel__message">
+          <h2 class="message-title">Nenhuma mensagem encontrada</h2>
+          <p class="message-text">
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+        </div>
+        <!-- <div class="right-panel__button">
+          <button class="btn-copy">Copiar</button>
+        </div> -->
+      </aside>
+    </main>
+  </body>
+</html>
